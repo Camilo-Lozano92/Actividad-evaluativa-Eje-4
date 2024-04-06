@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Cambiar la fuente a Arial o cualquier otra fuente sans-serif */
+    font-size: 16px; /* Cambiar el tamaño de la letra a 16px */
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    margin-left: 240px;
+}
+
+.content {
+    max-width: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: top; /* Alineación vertical al centro */
+    
+}
+
+.content-title {
+    text-align: center; /* Alinear el texto al centro */
+}
+
+.content-text {
+    text-align: left;
+}
+
+.main-content {
+    width: auto; /* Hacer que el ancho se ajuste al contenido */
+   }
+
+.dynamic-content {
+    flex: 1; /* Hacer que ocupe el espacio restante */
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1500px;
+    
+}
+/* Estilos del menú */
+.main-menu {
+    padding: 10px;
+    background-color: #52af00;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Establecer un ancho máximo para el menú */
+    width: auto; /* Permitir que el ancho se ajuste automáticamente según el contenido */
+    
+}
+
+.main-menu li {
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    list-style: none; /* Quitar los puntos de las listas */
+}
+
+.main-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+
+.main-menu a:hover {
+    background-color: #3c7d00;
+}
+
+.sub-list {
+    display: none;
+    margin-left: 10px;
+    list-style: none; /* Quitar los puntos de las listas */
+}
+
+.sub-list li {
+    margin-bottom: 6px;
+}
+
+/* Mostrar sublista al hacer hover en el elemento principal */
+.main-menu li:hover .sub-list {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.content-videos {
+    display: flex; /* Utilizar un contenedor flexible para alinear los videos */
+    flex-wrap: nowrap; /* Evitar el ajuste de línea */
+    justify-content: flex-start; /* Alinear los videos al principio */
+    align-items: flex-start; /* Alinear los videos en la parte superior */
+    margin-top: 20px; /* Establecer el margen superior */
+    margin-left: 1px; /* Establecer el margen izquierdo */
+    justify-content: center;
+}
+
+.content-videos iframe {
+    margin-right: 5px; /* Espacio entre videos */
+    width: 430px; /* Establecer un ancho fijo para los videos */
+    height: 260px; /* Establecer una altura fija para los videos */
+}
+
+
+.content-text {
+    margin-bottom: 20px; /* Espacio entre el texto y los videos */
+}
+
