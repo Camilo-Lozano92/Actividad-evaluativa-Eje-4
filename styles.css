@@ -163,6 +163,12 @@ body {
         margin-top: 60px; /* Ajustar el margen superior para evitar la superposición del título */
     }
     /* Ajuste para evitar que el menú cubra el título */
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        
     
 }
 .content-videos {
