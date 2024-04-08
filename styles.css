@@ -24,13 +24,14 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     padding: 20px;
+    align-items: center;
 }
 
 h1 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
-    margin-left: 240px;
+    
 }
 
 
@@ -164,4 +165,15 @@ body {
     /* Ajuste para evitar que el menú cubra el título */
     
 }
+.content-videos {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los videos se envuelvan en líneas adicionales si no caben horizontalmente */
+    justify-content: center; /* Centrar los videos horizontalmente */
+    margin-top: 20px;
+}
 
+.content-videos iframe {
+    width: 300px; /* Ancho fijo para los videos */
+    height: 200px; /* Altura fija para los videos */
+    margin: 0 10px 10px 0; /* Espacio entre los videos */
+}
