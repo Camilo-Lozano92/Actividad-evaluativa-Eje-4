@@ -173,7 +173,8 @@ body {
 }
 
 .content-videos iframe {
-    width: 300px; /* Ancho fijo para los videos */
-    height: 200px; /* Altura fija para los videos */
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    height: auto; /* Altura automática para mantener la proporción */
     margin: 0 10px 10px 0; /* Espacio entre los videos */
+    max-width: 430px; /* Ancho máximo para evitar que los videos se estiren demasiado */
 }
