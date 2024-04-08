@@ -22,6 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
         return content.replace(videoRegex, "");
     }
 
+    // Obtener el contenido por defecto del primer elemento del menú
+    const defaultContent = menuItems[0].getAttribute("data-content");
+    const defaultTitle = menuItems[0].textContent;
+
+    // Mostrar el contenido por defecto al cargar la página
+    titleElement.textContent = defaultTitle;
+    textElement.innerHTML = processParagraphs(defaultContent);
+
     menuItems.forEach(item => {
         item.addEventListener("click", function(event) {
             event.preventDefault();
